@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Atividade em PHP - Romildo A. Lima Jr.</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <style>
+            div#rodape{
+                align-content: center;
+            }
+            ul{
+                border-color: black;
+                align-items: center;
+                display: inline-block;
+                list-style-type: none;
+            }
+            div#palco{
+                height: auto;
+                width: 100%;
+                align-content: center;
+                margin-top: 120px;
+                border: 2px solid black;
+                background-color: powderblue;
+                padding-top: 50px;
+                padding-right: 70px;
+                padding-bottom: 50px;
+                padding-left: 70px;
+            }
+            h3{
+                text-align: center;
+                font-family: Arial, sans-serif, Verdana;
+                color: white;
+                font-weight: bold;
+            }
+            button#btn1{
+                background-color: green;
+                color: whitesmoke;
+                border-bottom-color: green;
+                padding: 16px;
+                font-size:16px;
+                border: 2px;
+                cursor:pointer;
+            }
+            button#btn2{
+                background-color: white;
+                color: black;
+                border-bottom-color: green;
+                padding: 16px;
+                font-size:16px;
+                border: 2px;
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row navbar fixed-top">
+            <div class="col text-center bg-primary">
+                <h1 class="text-white">Curso PHP</h1>
+                <h2 class="text-white">Índice dos Exercícios</h2>
+            </div>
+            </div>
+            <div class="row" id="palco">
+                <div class="col align-content-center">
+                    <div class="form">
+                    <form method="POST" action="testeEmail.php">
+                    <h1> Formulário de Contato</h1>
+                        <div class="row align-content-center">
+                            <div class="col-6">
+                            <label>Nome</label>
+                            <input type="text" class="form-control"  name="nome" required>
+                            <label>Email.:</label>
+                            <input type="email" class="form-control" name="email" required/>
+                            </div>
+                            <div class="col-6" >
+                            <label>Mensagem.:</label><br>
+                            <textarea name="mensagem" rows="5" cols="40"></textarea><br>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+            <hr> 
+                <div class="row align-content-center">
+                    <div class="col-6"  align="center"> 
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </div>
+                    <div class="col-6"  align="center">
+                        <button type="reset" class="btn btn-primary">Limpar</button>
+                    </div>
+                </div>   
+            <hr>
+            <div class="row bg-primary navbar fixed-botton">
+                <div class="col" id="rodape">
+                    <h3>Romildo A. Lima Jr.</h3>
+                </div>
+            </div>
+            </div>
+    </body>
+</html>
